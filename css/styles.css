@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Merriweather&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.wave {
+    height: 40px;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.artist-input {
+    font-family: Poppins; 
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.albums {
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.search-btn {
+    font-family: Poppins; 
+    padding: 5px;
+    background-color: rgb(143, 202, 198);
+    border: none;
+    height: 90%;
+    margin: auto;
+    border-radius: 8%;
+}
+
+.search-btn:hover {
+    opacity: 0.8;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1%;
+    justify-content: space-evenly;
+    width: 280px;
+}
+
+
+.nav-container {
+    z-index: 2; position: relative;
+}
+
+.section-container {
+    margin: 5%;
+    padding-left: 5%;
+}
+
+h2 {
+    margin-bottom: 5vh;
+    font-size: 1.7rem;
+}
+
+.click-here {
+    text-decoration: none;
+    color: rgb(86, 163, 158) ;
+}
+
+.click-here:hover {
+    text-decoration: none;
+    color: rgb(52, 124, 119) ;
+}
+
+#panda {
+    display: block;
+    margin: auto;
+    width: 50vh;
+}
+
+#listen-to {
+    display: flex;  
+    position: relative;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.center-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(111, 184, 179, 90%);
+}
+
+.main-header {
+  display: block;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  font-family: Merriweather;
+  padding: 10px 10px 10px 70px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.home-page-link {
+  text-decoration: none !important;
+  color: black;
+}
+
+.api-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.api-radio > input {
+  margin: 5px;
+}
+
+.artwork-img {
+  width: 250px;
+}
