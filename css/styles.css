@@ -20,83 +20,84 @@ body {
 }
 
 .wave {
-    height: 40px;
-    margin: 0;
-    padding-top: 12px;
+  height: 40px;
+  margin: 0;
+  padding-top: 12px;
 }
 
-.artist-input {
-    font-family: Poppins; 
-    padding: 5px;
-    margin-left: 10%;
-    margin-top: 1%;
+.search-box {
+  font-family: Poppins;
+  padding: 5px;
+  margin-left: 10%;
+  margin-top: 1%;
 }
 
-.albums {
-    padding: 5px;
-    margin-left: 10%;
-    margin-top: 1%;
+#result-list {
+  padding: 5px;
+  margin-left: 10%;
+  margin-top: 1%;
 }
 
 .search-btn {
-    font-family: Poppins; 
-    padding: 5px;
-    background-color: rgb(143, 202, 198);
-    border: none;
-    height: 90%;
-    margin: auto;
-    border-radius: 8%;
+  font-family: Poppins;
+  padding: 5px;
+  background-color: rgb(143, 202, 198);
+  border: none;
+  height: 90%;
+  margin: auto;
+  border-radius: 8%;
 }
 
 .search-btn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 #search-bar {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-top: 1%;
-    justify-content: space-evenly;
-    width: 280px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 1%;
+  justify-content: space-evenly;
+  width: 280px;
 }
 
 
 .nav-container {
-    z-index: 2; position: relative;
+  z-index: 2;
+  position: relative;
 }
 
 .section-container {
-    margin: 5%;
-    padding-left: 5%;
+  margin: 5%;
+  padding-left: 5%;
 }
 
 h2 {
-    margin-bottom: 5vh;
-    font-size: 1.7rem;
+  margin-bottom: 5vh;
+  font-size: 1.7rem;
 }
 
 .click-here {
-    text-decoration: none;
-    color: rgb(86, 163, 158) ;
+  text-decoration: none;
+  color: rgb(86, 163, 158);
 }
 
 .click-here:hover {
-    text-decoration: none;
-    color: rgb(52, 124, 119) ;
+  text-decoration: none;
+  color: rgb(52, 124, 119);
 }
 
 #panda {
-    display: block;
-    margin: auto;
-    width: 50vh;
+  display: block;
+  margin: auto;
+  width: 50vh;
 }
 
 #listen-to {
-    display: flex;  
-    position: relative;
-    justify-content: space-around;
-    margin-top: 10vh;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-top: 10vh;
 }
 
 .center-footer {
@@ -140,10 +141,16 @@ h2 {
   margin-top: 10px;
 }
 
-.api-radio > input {
+.api-radio>input,
+.type-select-wrapper {
   margin: 5px;
 }
 
 .artwork-img {
   width: 250px;
+}
+
+#type-select {
+  font-family: 'Poppins';
+  height: 105%;
 }
