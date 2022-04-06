@@ -20,7 +20,7 @@ function disableSelect() {
 }
 
 function enableSelect() {
-    document.getElementById('type-select').removeAttribute('disabled's)
+    document.getElementById('type-select').removeAttribute('disabled')
 }
 
 export {
