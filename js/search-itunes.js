@@ -27,10 +27,6 @@ function searchItunes() {
                 }
                 clearPage()
                 noResultCheck()
-            }).catch((error) => {
-                console.log(error)
-                clearPage()
-                noResultCheck()
             })
         })
     document.getElementById('search-box').value = ''
