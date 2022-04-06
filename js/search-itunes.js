@@ -1,5 +1,5 @@
 import { iTunesDom } from "./dom.js"
-import { clearPage } from "./clear-page.js"
+import { clearPage, noResultCheck } from "./clear-page.js"
 import {
     $result_list,
     $search_term_input,
@@ -26,6 +26,11 @@ function searchItunes() {
                     $result_list.append(element)
                 }
                 clearPage()
+                noResultCheck()
+            }).catch((error) => {
+                console.log(error)
+                clearPage()
+                noResultCheck()
             })
         })
     document.getElementById('search-box').value = ''

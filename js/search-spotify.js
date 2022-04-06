@@ -1,6 +1,7 @@
 import { spotifyDom } from "./dom.js"
-import { clearPage } from "./clear-page.js"
+import { clearPage, noResultCheck } from "./clear-page.js"
 import { $result_list } from "./on-body-load.js"
+
 
 function searchSpotify(artistName) {
     artistName = artistName.replace(/\s/g, '%20')
@@ -26,7 +27,6 @@ function searchSpotify(artistName) {
                 headers: { 'Authorization': 'Bearer ' + token }
             }).then(response1 => {
                 response1.json().then(data1 => {
-                    console.log('data1', data1.albums.items)
                     const items = data1.albums.items
 
                     for (let item of items) {
@@ -34,6 +34,10 @@ function searchSpotify(artistName) {
                         $result_list.append(element)
                     }
                     clearPage()
+                }).catch((error) => {
+                    console.log(error)
+                    clearPage()
+                    noResultCheck()
                 })
             })
 
