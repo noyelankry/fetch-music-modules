@@ -114,6 +114,7 @@ h2 {
   position: fixed;
   bottom: 0;
   background-color: rgb(111, 184, 179, 90%);
+  color: black;
 }
 
 .main-header {
