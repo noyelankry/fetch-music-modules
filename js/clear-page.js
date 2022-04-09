@@ -1,6 +1,6 @@
 import { $result_list } from "./on-body-load.js"
 
-function clearPage() {
+export function clearPage() {
     document.getElementById('search-btn').removeAttribute('disabled')
     if (document.getElementById('panda') !== null) {
         document.getElementById('panda').remove()
@@ -8,13 +8,8 @@ function clearPage() {
     }
 }
 
-function noResultCheck() {
+export function noResultCheck() {
     if ($result_list.contents().length === 0) {
         document.getElementById('result-list').innerHTML = '<strong>NO RESULTS FOUND!</strong> Please Try Again...'
     }
-}
-
-export {
-    clearPage,
-    noResultCheck
 }
