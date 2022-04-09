@@ -8,16 +8,18 @@
     <title>Fetch Music</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script type="module" src="js/main.js" defer></script>
     <script type="module" src="js/on-body-load.js" defer></script>
     <script type="module" src="js/search-artist.js" defer></script>
-    <script type="module" src="js/search-itunes.js" defer></script>
-    <script type="module" src="js/search-spotify.js" defer></script>
     <script type="module" src="js/clear-page.js" defer></script>
-    <script type="module" src="js/dom.js" defer></script>
+    <script type="module" src="js/itunes/search-itunes.js" defer></script>
+    <script type="module" src="js/itunes/itunes-dom.js" defer></script>
+    <script type="module" src="js/spotify/search-spotify.js" defer></script>
+    <script type="module" src="js/spotify/spotify-dom.js" defer></script>
 </head>
 
 
@@ -32,8 +34,9 @@
     </header>
     <main class="main-container">
         <div id="search-bar">
-            <input type="text" placeholder="Artist Name" class="search-box" id="search-box">
-            <div class="type-select-wrapper">
+            <input type="text" placeholder="Artist Name" class="input is-rounded search-box is-info is-small"
+                id="search-box">
+            <div class="type-select-wrapper select is-rounded is-small is-info">
                 <label for="type-select"></label>
                 <select name="type-select" id="type-select">
                     <option value="all">All</option>

@@ -27,9 +27,8 @@ body {
 
 .search-box {
   font-family: Poppins;
-  padding: 5px;
   margin-left: 10%;
-  margin-top: 1%;
+  margin-top: 6px;
 }
 
 #result-list {
@@ -58,7 +57,7 @@ body {
   margin: auto;
   margin-top: 1%;
   justify-content: space-evenly;
-  width: 280px;
+  width: 400px;
 }
 
 
@@ -98,6 +97,9 @@ h2 {
   position: relative;
   justify-content: space-around;
   margin-top: 10vh;
+  font-size: 1.5rem;
+  font-family: Merriweather;
+  color: black;
 }
 
 .center-footer {
@@ -119,6 +121,7 @@ h2 {
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   font-family: Merriweather;
   padding: 10px 10px 10px 70px;
+  font-size: 2rem;
 }
 
 .main-container {
