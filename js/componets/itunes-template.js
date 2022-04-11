@@ -1,4 +1,4 @@
-export function iTunesDom(item) {
+export function itunesTemplate(item) {
     const template = `
     <div class="album-name">
         <div>
@@ -19,5 +19,5 @@ export function iTunesDom(item) {
         <br><br>
     </div>
     `
-    return $(template)
+    return template
 }

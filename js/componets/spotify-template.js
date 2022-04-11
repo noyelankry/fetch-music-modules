@@ -1,4 +1,4 @@
-export function spotifyDom(item) {
+export function spotifyTemplate(item) {
     const template = `
     <div class="album-name">
         <div>
@@ -20,6 +20,6 @@ export function spotifyDom(item) {
         <br><br>
     </div>
     `
-    return $(template)
+    return template
 }
 

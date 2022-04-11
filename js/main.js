@@ -1,5 +1,7 @@
-import { onBodyLoad } from "./on-body-load.js"
-import { searchArtist, enableSelect, disableSelect } from "./search-artist.js"
+import { onBodyLoad } from "./utils/on-body-load.js"
+import { searchArtist } from "./business-logic/search-artist.js"
+import { enableSelect } from "./utils/enable-select.js"
+import { disableSelect } from "./utils/disable-select.js"
 
 window.onBodyLoad = onBodyLoad
 window.searchArtist = searchArtist
